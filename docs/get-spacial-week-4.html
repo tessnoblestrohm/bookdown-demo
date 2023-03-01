@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Get Spacial (week 4) | My Bookdown Demo</title>
+  <meta name="description" content="This is an example of using the bookdown package. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Get Spacial (week 4) | My Bookdown Demo" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is an example of using the bookdown package. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Get Spacial (week 4) | My Bookdown Demo" />
+  
+  <meta name="twitter:description" content="This is an example of using the bookdown package. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Tess Noble Strohm" />
+
+
+<meta name="date" content="2023-03-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="denoucement-week-3.html"/>
+<link rel="next" href="spacial-analysis-week-4.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>My Intro</a></li>
+<li class="chapter" data-level="1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html"><i class="fa fa-check"></i><b>1</b> API’s and Iteration (week 3)</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#lesson-objectives"><i class="fa fa-check"></i><b>1.0.1</b> Lesson Objectives</a></li>
+<li class="chapter" data-level="1.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#apis"><i class="fa fa-check"></i><b>1.1</b> APIs</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#nps-visitation-data"><i class="fa fa-check"></i><b>1.1.1</b> NPS Visitation Data</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#functions"><i class="fa fa-check"></i><b>1.2</b> Functions</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#functionize-api-pulls"><i class="fa fa-check"></i><b>1.2.1</b> Functionize API Pulls</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#function-defaults"><i class="fa fa-check"></i><b>1.3</b> Function Defaults</a></li>
+<li class="chapter" data-level="1.4" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#iterations"><i class="fa fa-check"></i><b>1.4</b> Iterations</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#for-loops"><i class="fa fa-check"></i><b>1.4.1</b> For loops</a></li>
+<li class="chapter" data-level="1.4.2" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#exercise-6"><i class="fa fa-check"></i><b>1.4.2</b> Exercise #6</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#mapping"><i class="fa fa-check"></i><b>1.5</b> Mapping</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#exercise-7"><i class="fa fa-check"></i><b>1.5.1</b> Exercise #7</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html"><i class="fa fa-check"></i><b>2</b> Data Munging (week 3)</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#lesson-objectives-1"><i class="fa fa-check"></i><b>2.0.1</b> Lesson Objectives</a></li>
+<li class="chapter" data-level="2.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#pulling-in-necessary-packages-and-data-sets"><i class="fa fa-check"></i><b>2.1</b> Pulling in necessary packages and data sets</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-1-1"><i class="fa fa-check"></i><b>2.1.1</b> Exercise #1</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exploring-our-data"><i class="fa fa-check"></i><b>2.2</b> Exploring our data</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-2-1"><i class="fa fa-check"></i><b>2.2.1</b> Exercise #2</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#pivoting"><i class="fa fa-check"></i><b>2.3</b> Pivoting</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-3-1"><i class="fa fa-check"></i><b>2.3.1</b> Exercise #3</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#joining"><i class="fa fa-check"></i><b>2.4</b> Joining</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-4-1"><i class="fa fa-check"></i><b>2.4.1</b> Exercise #4</a></li>
+<li class="chapter" data-level="2.4.2" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-5-1"><i class="fa fa-check"></i><b>2.4.2</b> Exercise #5</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html"><i class="fa fa-check"></i><b>3</b> Denoucement (week 3)</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#lesson-objectives-2"><i class="fa fa-check"></i><b>3.1</b> Lesson Objectives:</a></li>
+<li class="chapter" data-level="3.2" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#streaflow-datasets"><i class="fa fa-check"></i><b>3.2</b> Streaflow Datasets</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#usgs-dataretrieval-r-package"><i class="fa fa-check"></i><b>3.2.1</b> USGS <code>dataRetrieval</code> R package</a></li>
+<li class="chapter" data-level="3.2.2" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#cdwrs-api"><i class="fa fa-check"></i><b>3.2.2</b> CDWR’s API</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-1-2"><i class="fa fa-check"></i><b>3.3</b> Exercise #1</a></li>
+<li class="chapter" data-level="3.4" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-2-2"><i class="fa fa-check"></i><b>3.4</b> Exercise #2</a></li>
+<li class="chapter" data-level="3.5" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-3-2"><i class="fa fa-check"></i><b>3.5</b> Exercise #3</a></li>
+<li class="chapter" data-level="3.6" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-4-2"><i class="fa fa-check"></i><b>3.6</b> Exercise #4</a></li>
+<li class="chapter" data-level="3.7" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-5-2"><i class="fa fa-check"></i><b>3.7</b> Exercise #5</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html"><i class="fa fa-check"></i><b>4</b> Get Spacial (week 4)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#vector-data"><i class="fa fa-check"></i><b>4.1</b> Vector Data</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#us-census-spatial-data-with-tigris"><i class="fa fa-check"></i><b>4.1.1</b> US Census spatial data with <code>tigris</code></a></li>
+<li class="chapter" data-level="4.1.2" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#species-occurrence-data-with-rgbif"><i class="fa fa-check"></i><b>4.1.2</b> Species Occurrence data with <span><code>rgbif</code></span></a></li>
+<li class="chapter" data-level="4.1.3" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-1-3"><i class="fa fa-check"></i><b>4.1.3</b> Exercise #1</a></li>
+<li class="chapter" data-level="4.1.4" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#snotel-data-with-soildb"><i class="fa fa-check"></i><b>4.1.4</b> SNOTEL data with <span><code>soilDB</code></span></a></li>
+<li class="chapter" data-level="4.1.5" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-2-3"><i class="fa fa-check"></i><b>4.1.5</b> Exercise #2</a></li>
+<li class="chapter" data-level="4.1.6" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-3-3"><i class="fa fa-check"></i><b>4.1.6</b> Exercise #3</a></li>
+<li class="chapter" data-level="4.1.7" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#save-vector-data"><i class="fa fa-check"></i><b>4.1.7</b> Save Vector Data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#raster-data"><i class="fa fa-check"></i><b>4.2</b> Raster Data</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#elevation-data-with-elevatr"><i class="fa fa-check"></i><b>4.2.1</b> Elevation data with <code>elevatr</code></a></li>
+<li class="chapter" data-level="4.2.2" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-4-3"><i class="fa fa-check"></i><b>4.2.2</b> Exercise #4</a></li>
+<li class="chapter" data-level="4.2.3" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#landcover-data"><i class="fa fa-check"></i><b>4.2.3</b> Landcover data</a></li>
+<li class="chapter" data-level="4.2.4" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-5-3"><i class="fa fa-check"></i><b>4.2.4</b> Exercise #5</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html"><i class="fa fa-check"></i><b>5</b> Spacial Analysis (week 4)</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#load-in-spatial-data"><i class="fa fa-check"></i><b>5.1</b> Load in spatial data</a></li>
+<li class="chapter" data-level="5.2" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#distance-calculations"><i class="fa fa-check"></i><b>5.2</b> Distance Calculations</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-1-4"><i class="fa fa-check"></i><b>5.2.1</b> Exercise #1</a></li>
+<li class="chapter" data-level="5.2.2" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-2-4"><i class="fa fa-check"></i><b>5.2.2</b> Exercise #2</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#buffers"><i class="fa fa-check"></i><b>5.3</b> Buffers</a></li>
+<li class="chapter" data-level="5.4" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#spatial-intersect"><i class="fa fa-check"></i><b>5.4</b> Spatial Intersect</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-3-4"><i class="fa fa-check"></i><b>5.4.1</b> Exercise #3</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#raster-reclassification"><i class="fa fa-check"></i><b>5.5</b> Raster Reclassification</a></li>
+<li class="chapter" data-level="5.6" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#focal-statistics"><i class="fa fa-check"></i><b>5.6</b> Focal Statistics</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-4-4"><i class="fa fa-check"></i><b>5.6.1</b> Exercise #4</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#raster-extract"><i class="fa fa-check"></i><b>5.7</b> Raster Extract</a>
+<ul>
+<li class="chapter" data-level="5.7.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-5-4"><i class="fa fa-check"></i><b>5.7.1</b> Exercise #5</a></li>
+<li class="chapter" data-level="5.7.2" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-6-1"><i class="fa fa-check"></i><b>5.7.2</b> Exercise #6</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">My Bookdown Demo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="get-spacial-week-4" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Get Spacial (week 4)<a href="get-spacial-week-4.html#get-spacial-week-4" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In Week 1 you were introduced to working with geospatial data in R. This week you will dive deeper into wrangling, analyzing, and visualizing geospatial data. In this lesson you will be exposed to various R packages you can retrieve spatial data from and work through importing, wrangling, and saving various spatial data sets.</p>
+<p>Start off by updating your setup.R script (you can just copy it over from your previous lesson folders) and add these new packages to your list:</p>
+<ul>
+<li><p><code>rgbif</code></p></li>
+<li><p><code>soilDB</code></p></li>
+</ul>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="get-spacial-week-4.html#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;setup.R&quot;</span>)</span></code></pre></div>
+<p>Set up the <code>tmap</code> mode to interactive for some quick exploitative mapping of all these various spatial data sets.</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="get-spacial-week-4.html#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">&quot;view&quot;</span>)</span></code></pre></div>
+<div id="vector-data" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Vector Data<a href="get-spacial-week-4.html#vector-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="us-census-spatial-data-with-tigris" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> US Census spatial data with <code>tigris</code><a href="get-spacial-week-4.html#us-census-spatial-data-with-tigris" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Import the counties shapefile for Colorado again as you did in Week 1, along with linear water features for Larimer county.</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="get-spacial-week-4.html#cb74-1" aria-hidden="true" tabindex="-1"></a>counties <span class="ot">&lt;-</span> tigris<span class="sc">::</span><span class="fu">counties</span>(<span class="at">state =</span> <span class="st">&quot;CO&quot;</span>)</span>
+<span id="cb74-2"><a href="get-spacial-week-4.html#cb74-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb74-3"><a href="get-spacial-week-4.html#cb74-3" aria-hidden="true" tabindex="-1"></a>linear_features <span class="ot">&lt;-</span> <span class="fu">linear_water</span>(<span class="at">state =</span> <span class="st">&quot;CO&quot;</span>, <span class="at">county =</span> <span class="st">&quot;Larimer&quot;</span>)</span></code></pre></div>
+<p>This linear features file is pretty meaty. Inspect all the unique names for the features, what naming pattern do you notice? Let’s filter this data set to only major rivers in the county, which all have ‘Riv’ at the end of their name. For working with character strings, the <code>stringr</code> package is extremely helpful and a member of the Tidyverse.</p>
+<p>To filter rows that have a specific character string, you can use <code>str_detect()</code> within <code>filter()</code>.</p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="get-spacial-week-4.html#cb75-1" aria-hidden="true" tabindex="-1"></a>rivers <span class="ot">&lt;-</span> linear_features <span class="sc">%&gt;%</span> </span>
+<span id="cb75-2"><a href="get-spacial-week-4.html#cb75-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(FULLNAME, <span class="st">&quot;Riv&quot;</span>))</span></code></pre></div>
+</div>
+<div id="species-occurrence-data-with-rgbif" class="section level3 hasAnchor" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Species Occurrence data with <a href="https://docs.ropensci.org/rgbif/"><code>rgbif</code></a><a href="get-spacial-week-4.html#species-occurrence-data-with-rgbif" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To experiment with point data (latitude/longitude), we are going to explore the <code>rgbif</code> package, which allows you to download species occurrences from the <a href="https://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a>, a database of global species occurrences with over 2.2 billion records.</p>
+<p>We are going to import occurrence data for a couple of charismatic Colorado species:</p>
+<table>
+<colgroup>
+<col width="27%" />
+<col width="32%" />
+<col width="39%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="images/elk.jpg" alt="Elk" width="173" /></td>
+<td align="center"><img src="images/marmot.jpg" alt="Marmot" width="173" /></td>
+<td align="center"><img src="images/salamander.jpg" alt="Salamander" width="215" /></td>
+</tr>
+<tr class="even">
+<td align="center">Elk</td>
+<td align="center">Yellow-Bellied Marmot</td>
+<td align="center">Western Tiger Salamander</td>
+</tr>
+</tbody>
+</table>
+<p>To pull occurrence data with this package you use the <code>occ_data()</code> function and give it a species name you want to retrieve data for. Since we want to perform this operation for three species, this is a good opportunity to work through the iterative coding lessons you learned last week.</p>
+<p>We first need to create a string of species scientific names to use in the download function, and create a second string with their associated common names (order matters, make sure the two strings match).</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="get-spacial-week-4.html#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="co">#make a string of species names to use in the &#39;occ_data&#39; function</span></span>
+<span id="cb76-2"><a href="get-spacial-week-4.html#cb76-2" aria-hidden="true" tabindex="-1"></a>species <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Cervus canadensis&quot;</span>, <span class="st">&quot;Marmota flaviventris&quot;</span>, <span class="st">&quot;Ambystoma mavortium&quot;</span>)</span>
+<span id="cb76-3"><a href="get-spacial-week-4.html#cb76-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb76-4"><a href="get-spacial-week-4.html#cb76-4" aria-hidden="true" tabindex="-1"></a><span class="co">#also make a string of common names</span></span>
+<span id="cb76-5"><a href="get-spacial-week-4.html#cb76-5" aria-hidden="true" tabindex="-1"></a>common_name <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Elk&quot;</span>, <span class="st">&quot;Yellow-bellied Marmot&quot;</span>, <span class="st">&quot;Western Tiger Salamander&quot;</span>)</span></code></pre></div>
+</div>
+<div id="exercise-1-3" class="section level3 hasAnchor" number="4.1.3" style="color: red">
+<h3><span class="header-section-number">4.1.3</span> Exercise #1<a href="get-spacial-week-4.html#exercise-1-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The code below shows you the steps we want to import data for a single species. Convert this chunk of code to a for loop that iterates across each species scientific and common name.</p>
+<p><em>Tip for getting started</em>: You will need to add a couple extra steps outside of the for loop, including first creating an empty list to hold each output of each iteration and after the for loop bind all elements of the list to a single data frame using <code>bind_rows()</code> .</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="get-spacial-week-4.html#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co"># workflow outline</span></span>
+<span id="cb77-2"><a href="get-spacial-week-4.html#cb77-2" aria-hidden="true" tabindex="-1"></a><span class="co"># species &lt;- species[1] #this overwrites the list of &#39;species&#39; for just one species</span></span>
+<span id="cb77-3"><a href="get-spacial-week-4.html#cb77-3" aria-hidden="true" tabindex="-1"></a><span class="co"># common_name &lt;- common_name[1]</span></span>
+<span id="cb77-4"><a href="get-spacial-week-4.html#cb77-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-5"><a href="get-spacial-week-4.html#cb77-5" aria-hidden="true" tabindex="-1"></a><span class="co">#making the for_loop</span></span>
+<span id="cb77-6"><a href="get-spacial-week-4.html#cb77-6" aria-hidden="true" tabindex="-1"></a><span class="co">#make a vector that is a list</span></span>
+<span id="cb77-7"><a href="get-spacial-week-4.html#cb77-7" aria-hidden="true" tabindex="-1"></a>  occ <span class="ot">&lt;-</span> <span class="fu">vector</span>(<span class="st">&quot;list&quot;</span>, <span class="at">length =</span> <span class="fu">length</span>(species)) <span class="co">#you MUST specify the length</span></span>
+<span id="cb77-8"><a href="get-spacial-week-4.html#cb77-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb77-9"><a href="get-spacial-week-4.html#cb77-9" aria-hidden="true" tabindex="-1"></a><span class="co">#make the loop - this says &#39;for each item in the list (i), do 1 of all the things in the length&#39;</span></span>
+<span id="cb77-10"><a href="get-spacial-week-4.html#cb77-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(occ)) {</span>
+<span id="cb77-11"><a href="get-spacial-week-4.html#cb77-11" aria-hidden="true" tabindex="-1"></a>    occ1 <span class="ot">&lt;-</span></span>
+<span id="cb77-12"><a href="get-spacial-week-4.html#cb77-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">occ_data</span>(</span>
+<span id="cb77-13"><a href="get-spacial-week-4.html#cb77-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">scientificName =</span> species[i],</span>
+<span id="cb77-14"><a href="get-spacial-week-4.html#cb77-14" aria-hidden="true" tabindex="-1"></a>      <span class="at">hasCoordinate =</span> <span class="cn">TRUE</span>, <span class="co">#we only want data with spatial coordinates</span></span>
+<span id="cb77-15"><a href="get-spacial-week-4.html#cb77-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">geometry =</span> <span class="fu">st_bbox</span>(counties), <span class="co">#filter to the state of CO</span></span>
+<span id="cb77-16"><a href="get-spacial-week-4.html#cb77-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">limit =</span> <span class="dv">2000</span> <span class="co">#optional set an upper limit for total occurrences to download</span></span>
+<span id="cb77-17"><a href="get-spacial-week-4.html#cb77-17" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb77-18"><a href="get-spacial-week-4.html#cb77-18" aria-hidden="true" tabindex="-1"></a>    .<span class="sc">$</span>data <span class="co">#return just the data frame. The &#39;.&#39; symbolizes the previous function&#39;s output. </span></span>
+<span id="cb77-19"><a href="get-spacial-week-4.html#cb77-19" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb77-20"><a href="get-spacial-week-4.html#cb77-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add species name column as ID to use later</span></span>
+<span id="cb77-21"><a href="get-spacial-week-4.html#cb77-21" aria-hidden="true" tabindex="-1"></a>  occ1<span class="sc">$</span>ID <span class="ot">&lt;-</span> common_name[i]</span>
+<span id="cb77-22"><a href="get-spacial-week-4.html#cb77-22" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb77-23"><a href="get-spacial-week-4.html#cb77-23" aria-hidden="true" tabindex="-1"></a>  <span class="co">#clean by removing duplicate occurrences, </span></span>
+<span id="cb77-24"><a href="get-spacial-week-4.html#cb77-24" aria-hidden="true" tabindex="-1"></a>  <span class="do">##to store data in a list, you MUST you DOUBLE brackets [[]]</span></span>
+<span id="cb77-25"><a href="get-spacial-week-4.html#cb77-25" aria-hidden="true" tabindex="-1"></a>  occ[[i]] <span class="ot">&lt;-</span></span>
+<span id="cb77-26"><a href="get-spacial-week-4.html#cb77-26" aria-hidden="true" tabindex="-1"></a>    occ1 <span class="sc">%&gt;%</span> <span class="fu">distinct</span>(decimalLatitude, decimalLongitude, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb77-27"><a href="get-spacial-week-4.html#cb77-27" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="at">Species =</span> ID,</span>
+<span id="cb77-28"><a href="get-spacial-week-4.html#cb77-28" aria-hidden="true" tabindex="-1"></a>                  decimalLatitude,</span>
+<span id="cb77-29"><a href="get-spacial-week-4.html#cb77-29" aria-hidden="true" tabindex="-1"></a>                  decimalLongitude,</span>
+<span id="cb77-30"><a href="get-spacial-week-4.html#cb77-30" aria-hidden="true" tabindex="-1"></a>                  year,</span>
+<span id="cb77-31"><a href="get-spacial-week-4.html#cb77-31" aria-hidden="true" tabindex="-1"></a>                  month,</span>
+<span id="cb77-32"><a href="get-spacial-week-4.html#cb77-32" aria-hidden="true" tabindex="-1"></a>                  basisOfRecord) </span>
+<span id="cb77-33"><a href="get-spacial-week-4.html#cb77-33" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb77-34"><a href="get-spacial-week-4.html#cb77-34" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb77-35"><a href="get-spacial-week-4.html#cb77-35" aria-hidden="true" tabindex="-1"></a><span class="co">#bind rows</span></span>
+<span id="cb77-36"><a href="get-spacial-week-4.html#cb77-36" aria-hidden="true" tabindex="-1"></a>final_occ <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(occ)</span>
+<span id="cb77-37"><a href="get-spacial-week-4.html#cb77-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-38"><a href="get-spacial-week-4.html#cb77-38" aria-hidden="true" tabindex="-1"></a>occ <span class="ot">&lt;-</span> <span class="fu">st_as_sf</span>(final_occ, <span class="at">coords =</span> <span class="fu">c</span>(<span class="st">&quot;decimalLongitude&quot;</span>, <span class="st">&quot;decimalLatitude&quot;</span>), <span class="at">crs =</span> <span class="dv">4326</span>)</span></code></pre></div>
+<p>Once you have your full data frame of occurrences for all three species, convert it to a spatial <code>sf</code> points object with the CRS set to 4326. Name the final object <code>occ</code>.</p>
+<p><strong>Note</strong>: we only used a few filter functions here available with the <code>occ_data()</code> function, but there are many more worth exploring!</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="get-spacial-week-4.html#cb78-1" aria-hidden="true" tabindex="-1"></a>?occ_data</span></code></pre></div>
+<div id="challenge" class="section level4 hasAnchor" number="4.1.3.1" style="color:red">
+<h4><span class="header-section-number">4.1.3.1</span> Challenge!<a href="get-spacial-week-4.html#challenge" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Re-write the for loop to retrieve each species occurrences but using <code>purrr::map()</code> instead.</p>
+</div>
+</div>
+<div id="snotel-data-with-soildb" class="section level3 hasAnchor" number="4.1.4">
+<h3><span class="header-section-number">4.1.4</span> SNOTEL data with <a href="http://ncss-tech.github.io/soilDB/"><code>soilDB</code></a><a href="get-spacial-week-4.html#snotel-data-with-soildb" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The <code>soilDB</code> package allows access to many databases, one of which includes daily climate data from USDA-NRCS SCAN (Soil Climate Analysis Network) stations. We are particularly interested in the SNOTEL (Snow Telemetry) sites to get daily snow depth across Colorado.</p>
+<p>First, you will need to read in the site metadata to get location information. The metadata file is included with the <code>soilDB</code> package installation, and you can bring it into your environment with <code>data()</code></p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="get-spacial-week-4.html#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">&#39;SCAN_SNOTEL_metadata&#39;</span>, <span class="at">package =</span> <span class="st">&#39;soilDB&#39;</span>)</span></code></pre></div>
+</div>
+<div id="exercise-2-3" class="section level3 hasAnchor" number="4.1.5" style="color: red">
+<h3><span class="header-section-number">4.1.5</span> Exercise #2<a href="get-spacial-week-4.html#exercise-2-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Filter this metadata to only the ‘SNOTEL’ sites and ‘Larimer’ county, convert it to a spatial <code>sf</code> object (set the CRS to <code>4326</code>, WGS 84), and name it ‘snotel_sites’.</p>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="get-spacial-week-4.html#cb80-1" aria-hidden="true" tabindex="-1"></a>Larimer_Snotel <span class="ot">&lt;-</span> SCAN_SNOTEL_metadata <span class="sc">%&gt;%</span></span>
+<span id="cb80-2"><a href="get-spacial-week-4.html#cb80-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(County <span class="sc">==</span> <span class="st">&quot;Larimer&quot;</span>)</span>
+<span id="cb80-3"><a href="get-spacial-week-4.html#cb80-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-4"><a href="get-spacial-week-4.html#cb80-4" aria-hidden="true" tabindex="-1"></a>snotel_sites <span class="ot">&lt;-</span> <span class="fu">st_as_sf</span>(Larimer_Snotel, <span class="at">coords =</span> <span class="fu">c</span>(<span class="st">&quot;Longitude&quot;</span>, <span class="st">&quot;Latitude&quot;</span>), <span class="at">crs =</span> <span class="dv">4326</span>)</span></code></pre></div>
+<p>How many SNOTEL sites are located in Colorado?</p>
+<p>There are 8 SNOTEL sites in Colorado.</p>
+</div>
+<div id="exercise-3-3" class="section level3 hasAnchor" number="4.1.6" style="color: red">
+<h3><span class="header-section-number">4.1.6</span> Exercise #3<a href="get-spacial-week-4.html#exercise-3-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Below is the string of operations you would use to import data for a single SNOTEL site for the years 2020 to 2022. Use <code>purrr::map()</code> to pull data for all unique SNOTEL sites in the <code>snotel_sites</code> object you just created. Coerce the data to a single data frame, then as a final step use <code>left_join()</code> to join the snow depth data to the station data to get the coordinates for all the sites, and make it a spatial object.</p>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="get-spacial-week-4.html#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="co">#First Site ID</span></span>
+<span id="cb81-2"><a href="get-spacial-week-4.html#cb81-2" aria-hidden="true" tabindex="-1"></a>Site <span class="ot">&lt;-</span> <span class="fu">unique</span>(snotel_sites<span class="sc">$</span>Site)[<span class="dv">1</span>]</span>
+<span id="cb81-3"><a href="get-spacial-week-4.html#cb81-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-4"><a href="get-spacial-week-4.html#cb81-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-5"><a href="get-spacial-week-4.html#cb81-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">fetchSCAN</span>(<span class="at">site.code =</span> Site, </span>
+<span id="cb81-6"><a href="get-spacial-week-4.html#cb81-6" aria-hidden="true" tabindex="-1"></a>                  <span class="at">year =</span> <span class="dv">2020</span><span class="sc">:</span><span class="dv">2022</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb81-7"><a href="get-spacial-week-4.html#cb81-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># this returns a list for each variable, bind them to a single df</span></span>
+<span id="cb81-8"><a href="get-spacial-week-4.html#cb81-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_rows</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb81-9"><a href="get-spacial-week-4.html#cb81-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb81-10"><a href="get-spacial-week-4.html#cb81-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">#filter just the snow depth site</span></span>
+<span id="cb81-11"><a href="get-spacial-week-4.html#cb81-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(sensor.id <span class="sc">==</span> <span class="st">&quot;SNWD.I&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb81-12"><a href="get-spacial-week-4.html#cb81-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">#remove metadata columns</span></span>
+<span id="cb81-13"><a href="get-spacial-week-4.html#cb81-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>(Name<span class="sc">:</span>pedlabsampnum))</span>
+<span id="cb81-14"><a href="get-spacial-week-4.html#cb81-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-15"><a href="get-spacial-week-4.html#cb81-15" aria-hidden="true" tabindex="-1"></a>joined_data <span class="ot">&lt;-</span> <span class="fu">left_join</span>(data, snotel_sites)</span>
+<span id="cb81-16"><a href="get-spacial-week-4.html#cb81-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-17"><a href="get-spacial-week-4.html#cb81-17" aria-hidden="true" tabindex="-1"></a>snotel_data <span class="ot">&lt;-</span> <span class="fu">st_as_sf</span>(joined_data, <span class="at">crs =</span> <span class="dv">4326</span>)</span></code></pre></div>
+</div>
+<div id="save-vector-data" class="section level3 hasAnchor" number="4.1.7">
+<h3><span class="header-section-number">4.1.7</span> Save Vector Data<a href="get-spacial-week-4.html#save-vector-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Save all the vector objects you created above (counties, rivers, occurrences, and snotel) to a single .RData file in the data/ folder. For the purposes of reproducibility and peer review, you should name this file ‘spatdat.RData’.</p>
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="get-spacial-week-4.html#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(counties, rivers, occ, snotel_data, <span class="at">file =</span> <span class="st">&quot;data/spatdat.RData&quot;</span>)</span></code></pre></div>
+</div>
+</div>
+<div id="raster-data" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Raster Data<a href="get-spacial-week-4.html#raster-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="elevation-data-with-elevatr" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Elevation data with <code>elevatr</code><a href="get-spacial-week-4.html#elevation-data-with-elevatr" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="exercise-4-3" class="section level3 hasAnchor" number="4.2.2" style="color: red">
+<h3><span class="header-section-number">4.2.2</span> Exercise #4<a href="get-spacial-week-4.html#exercise-4-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Follow instructions from the Week 1 spatial lesson to import elevation data for Colorado at a zoom level of 7 and write it to a .tif file in the data/ folder of this repo. <strong>Name the file ‘elevation.tif’</strong>. Make sure to crop the raster layer to the extent of Colorado, and give it the name “Elevation”. <strong>Produce a quick plot to show your final raster object</strong>.</p>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="get-spacial-week-4.html#cb83-1" aria-hidden="true" tabindex="-1"></a>counties <span class="ot">&lt;-</span> <span class="fu">counties</span>(<span class="at">state =</span> <span class="st">&quot;CO&quot;</span>)</span>
+<span id="cb83-2"><a href="get-spacial-week-4.html#cb83-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-3"><a href="get-spacial-week-4.html#cb83-3" aria-hidden="true" tabindex="-1"></a><span class="co">#roads &lt;- roads(state = &quot;CO&quot;)</span></span>
+<span id="cb83-4"><a href="get-spacial-week-4.html#cb83-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-5"><a href="get-spacial-week-4.html#cb83-5" aria-hidden="true" tabindex="-1"></a>elevation1 <span class="ot">&lt;-</span> <span class="fu">get_elev_raster</span>(counties, <span class="at">z =</span> <span class="dv">7</span>)</span>
+<span id="cb83-6"><a href="get-spacial-week-4.html#cb83-6" aria-hidden="true" tabindex="-1"></a>elevation2 <span class="ot">&lt;-</span> <span class="fu">rast</span>(elevation1)</span>
+<span id="cb83-7"><a href="get-spacial-week-4.html#cb83-7" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(elevation2)</span>
+<span id="cb83-8"><a href="get-spacial-week-4.html#cb83-8" aria-hidden="true" tabindex="-1"></a>elevation <span class="ot">&lt;-</span> <span class="fu">crop</span>(elevation2, counties)</span>
+<span id="cb83-9"><a href="get-spacial-week-4.html#cb83-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(elevation)</span>
+<span id="cb83-10"><a href="get-spacial-week-4.html#cb83-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-11"><a href="get-spacial-week-4.html#cb83-11" aria-hidden="true" tabindex="-1"></a><span class="fu">qtm</span>(elevation)</span>
+<span id="cb83-12"><a href="get-spacial-week-4.html#cb83-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-13"><a href="get-spacial-week-4.html#cb83-13" aria-hidden="true" tabindex="-1"></a><span class="fu">writeRaster</span>(elevation, <span class="at">file =</span> <span class="st">&quot;data/elevation.tif&quot;</span>)</span></code></pre></div>
+</div>
+<div id="landcover-data" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Landcover data<a href="get-spacial-week-4.html#landcover-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Read in the NLCD_CO.tif file in the data/ folder of the repo. Make note of the auxillary file .aux.xml with the .tif file. This raster represents National Land Cover Database (NLCD) 2019 CONUS landcover data downloaded from the <a href="https://www.mrlc.gov/data/nlcd-2019-land-cover-conus">MRLC website</a> and aggregated to ~1km resolution.</p>
+</div>
+<div id="exercise-5-3" class="section level3 hasAnchor" number="4.2.4" style="color:red">
+<h3><span class="header-section-number">4.2.4</span> Exercise #5<a href="get-spacial-week-4.html#exercise-5-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>What is the purpose of this auxiliary file? How is this landcover raster data different from our elevation data?</p>
+<p>The auxiliary file is essentially a legend or ‘key’ for the rater file; the raster data is just points with values attached to each, so the auxiliary file provides the information on what each of those points and values represent.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="denoucement-week-3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="spacial-analysis-week-4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

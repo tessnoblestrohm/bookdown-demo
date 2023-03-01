@@ -1,0 +1,13 @@
+---
+title: "My Bookdown Demo"
+author: "Tess Noble Strohm"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+description: "This is an example of using the bookdown package. The output format for this example is bookdown::gitbook."
+---
+
+# My Intro {-}
+
+This is my example of a bookdown document. Blah blah blah. the first "chapter" is unnumbered (with the "{-}"), and this R markdown (as the first page) MUST be called "index.Rmd".

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Spacial Analysis (week 4) | My Bookdown Demo</title>
+  <meta name="description" content="This is an example of using the bookdown package. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Spacial Analysis (week 4) | My Bookdown Demo" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is an example of using the bookdown package. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Spacial Analysis (week 4) | My Bookdown Demo" />
+  
+  <meta name="twitter:description" content="This is an example of using the bookdown package. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Tess Noble Strohm" />
+
+
+<meta name="date" content="2023-03-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="get-spacial-week-4.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>My Intro</a></li>
+<li class="chapter" data-level="1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html"><i class="fa fa-check"></i><b>1</b> API’s and Iteration (week 3)</a>
+<ul>
+<li class="chapter" data-level="1.0.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#lesson-objectives"><i class="fa fa-check"></i><b>1.0.1</b> Lesson Objectives</a></li>
+<li class="chapter" data-level="1.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#apis"><i class="fa fa-check"></i><b>1.1</b> APIs</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#nps-visitation-data"><i class="fa fa-check"></i><b>1.1.1</b> NPS Visitation Data</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#functions"><i class="fa fa-check"></i><b>1.2</b> Functions</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#functionize-api-pulls"><i class="fa fa-check"></i><b>1.2.1</b> Functionize API Pulls</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#function-defaults"><i class="fa fa-check"></i><b>1.3</b> Function Defaults</a></li>
+<li class="chapter" data-level="1.4" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#iterations"><i class="fa fa-check"></i><b>1.4</b> Iterations</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#for-loops"><i class="fa fa-check"></i><b>1.4.1</b> For loops</a></li>
+<li class="chapter" data-level="1.4.2" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#exercise-6"><i class="fa fa-check"></i><b>1.4.2</b> Exercise #6</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#mapping"><i class="fa fa-check"></i><b>1.5</b> Mapping</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="apis-and-iteration-week-3.html"><a href="apis-and-iteration-week-3.html#exercise-7"><i class="fa fa-check"></i><b>1.5.1</b> Exercise #7</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html"><i class="fa fa-check"></i><b>2</b> Data Munging (week 3)</a>
+<ul>
+<li class="chapter" data-level="2.0.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#lesson-objectives-1"><i class="fa fa-check"></i><b>2.0.1</b> Lesson Objectives</a></li>
+<li class="chapter" data-level="2.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#pulling-in-necessary-packages-and-data-sets"><i class="fa fa-check"></i><b>2.1</b> Pulling in necessary packages and data sets</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-1-1"><i class="fa fa-check"></i><b>2.1.1</b> Exercise #1</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exploring-our-data"><i class="fa fa-check"></i><b>2.2</b> Exploring our data</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-2-1"><i class="fa fa-check"></i><b>2.2.1</b> Exercise #2</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#pivoting"><i class="fa fa-check"></i><b>2.3</b> Pivoting</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-3-1"><i class="fa fa-check"></i><b>2.3.1</b> Exercise #3</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#joining"><i class="fa fa-check"></i><b>2.4</b> Joining</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-4-1"><i class="fa fa-check"></i><b>2.4.1</b> Exercise #4</a></li>
+<li class="chapter" data-level="2.4.2" data-path="data-munging-week-3.html"><a href="data-munging-week-3.html#exercise-5-1"><i class="fa fa-check"></i><b>2.4.2</b> Exercise #5</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html"><i class="fa fa-check"></i><b>3</b> Denoucement (week 3)</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#lesson-objectives-2"><i class="fa fa-check"></i><b>3.1</b> Lesson Objectives:</a></li>
+<li class="chapter" data-level="3.2" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#streaflow-datasets"><i class="fa fa-check"></i><b>3.2</b> Streaflow Datasets</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#usgs-dataretrieval-r-package"><i class="fa fa-check"></i><b>3.2.1</b> USGS <code>dataRetrieval</code> R package</a></li>
+<li class="chapter" data-level="3.2.2" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#cdwrs-api"><i class="fa fa-check"></i><b>3.2.2</b> CDWR’s API</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-1-2"><i class="fa fa-check"></i><b>3.3</b> Exercise #1</a></li>
+<li class="chapter" data-level="3.4" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-2-2"><i class="fa fa-check"></i><b>3.4</b> Exercise #2</a></li>
+<li class="chapter" data-level="3.5" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-3-2"><i class="fa fa-check"></i><b>3.5</b> Exercise #3</a></li>
+<li class="chapter" data-level="3.6" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-4-2"><i class="fa fa-check"></i><b>3.6</b> Exercise #4</a></li>
+<li class="chapter" data-level="3.7" data-path="denoucement-week-3.html"><a href="denoucement-week-3.html#exercise-5-2"><i class="fa fa-check"></i><b>3.7</b> Exercise #5</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html"><i class="fa fa-check"></i><b>4</b> Get Spacial (week 4)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#vector-data"><i class="fa fa-check"></i><b>4.1</b> Vector Data</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#us-census-spatial-data-with-tigris"><i class="fa fa-check"></i><b>4.1.1</b> US Census spatial data with <code>tigris</code></a></li>
+<li class="chapter" data-level="4.1.2" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#species-occurrence-data-with-rgbif"><i class="fa fa-check"></i><b>4.1.2</b> Species Occurrence data with <span><code>rgbif</code></span></a></li>
+<li class="chapter" data-level="4.1.3" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-1-3"><i class="fa fa-check"></i><b>4.1.3</b> Exercise #1</a></li>
+<li class="chapter" data-level="4.1.4" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#snotel-data-with-soildb"><i class="fa fa-check"></i><b>4.1.4</b> SNOTEL data with <span><code>soilDB</code></span></a></li>
+<li class="chapter" data-level="4.1.5" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-2-3"><i class="fa fa-check"></i><b>4.1.5</b> Exercise #2</a></li>
+<li class="chapter" data-level="4.1.6" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-3-3"><i class="fa fa-check"></i><b>4.1.6</b> Exercise #3</a></li>
+<li class="chapter" data-level="4.1.7" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#save-vector-data"><i class="fa fa-check"></i><b>4.1.7</b> Save Vector Data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#raster-data"><i class="fa fa-check"></i><b>4.2</b> Raster Data</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#elevation-data-with-elevatr"><i class="fa fa-check"></i><b>4.2.1</b> Elevation data with <code>elevatr</code></a></li>
+<li class="chapter" data-level="4.2.2" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-4-3"><i class="fa fa-check"></i><b>4.2.2</b> Exercise #4</a></li>
+<li class="chapter" data-level="4.2.3" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#landcover-data"><i class="fa fa-check"></i><b>4.2.3</b> Landcover data</a></li>
+<li class="chapter" data-level="4.2.4" data-path="get-spacial-week-4.html"><a href="get-spacial-week-4.html#exercise-5-3"><i class="fa fa-check"></i><b>4.2.4</b> Exercise #5</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html"><i class="fa fa-check"></i><b>5</b> Spacial Analysis (week 4)</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#load-in-spatial-data"><i class="fa fa-check"></i><b>5.1</b> Load in spatial data</a></li>
+<li class="chapter" data-level="5.2" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#distance-calculations"><i class="fa fa-check"></i><b>5.2</b> Distance Calculations</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-1-4"><i class="fa fa-check"></i><b>5.2.1</b> Exercise #1</a></li>
+<li class="chapter" data-level="5.2.2" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-2-4"><i class="fa fa-check"></i><b>5.2.2</b> Exercise #2</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#buffers"><i class="fa fa-check"></i><b>5.3</b> Buffers</a></li>
+<li class="chapter" data-level="5.4" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#spatial-intersect"><i class="fa fa-check"></i><b>5.4</b> Spatial Intersect</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-3-4"><i class="fa fa-check"></i><b>5.4.1</b> Exercise #3</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#raster-reclassification"><i class="fa fa-check"></i><b>5.5</b> Raster Reclassification</a></li>
+<li class="chapter" data-level="5.6" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#focal-statistics"><i class="fa fa-check"></i><b>5.6</b> Focal Statistics</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-4-4"><i class="fa fa-check"></i><b>5.6.1</b> Exercise #4</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#raster-extract"><i class="fa fa-check"></i><b>5.7</b> Raster Extract</a>
+<ul>
+<li class="chapter" data-level="5.7.1" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-5-4"><i class="fa fa-check"></i><b>5.7.1</b> Exercise #5</a></li>
+<li class="chapter" data-level="5.7.2" data-path="spacial-analysis-week-4.html"><a href="spacial-analysis-week-4.html#exercise-6-1"><i class="fa fa-check"></i><b>5.7.2</b> Exercise #6</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">My Bookdown Demo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="spacial-analysis-week-4" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Spacial Analysis (week 4)<a href="spacial-analysis-week-4.html#spacial-analysis-week-4" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In the first lesson this week you were exposed to various databases you can pull spatial data from and worked through importing, wrangling, and saving those spatial data types. Today we are going to use those data sets to perform a range of spatial analyses.</p>
+<p>You have briefly used the <code>sf</code> and <code>terra</code> packages so far in this course, but today we will be exploring them much more in depth using the wide range of spatial analysis operations they provide.</p>
+<p>You shouldn’t need to install any new packages for today:</p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="spacial-analysis-week-4.html#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;setup.R&quot;</span>)</span></code></pre></div>
+<div id="load-in-spatial-data" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Load in spatial data<a href="spacial-analysis-week-4.html#load-in-spatial-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To carry out today’s lesson you will need to read in the data you saved to your ‘data/’ folder from the ‘get-spatial’ lesson:</p>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="spacial-analysis-week-4.html#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load in all your vector data</span></span>
+<span id="cb85-2"><a href="spacial-analysis-week-4.html#cb85-2" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;data/spatDat.RData&quot;</span>)</span>
+<span id="cb85-3"><a href="spacial-analysis-week-4.html#cb85-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-4"><a href="spacial-analysis-week-4.html#cb85-4" aria-hidden="true" tabindex="-1"></a><span class="co">#read in the elevation and landcover rasters</span></span>
+<span id="cb85-5"><a href="spacial-analysis-week-4.html#cb85-5" aria-hidden="true" tabindex="-1"></a>landcover <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">rast</span>(<span class="st">&quot;data/NLCD_CO.tif&quot;</span>)</span>
+<span id="cb85-6"><a href="spacial-analysis-week-4.html#cb85-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-7"><a href="spacial-analysis-week-4.html#cb85-7" aria-hidden="true" tabindex="-1"></a>elevation <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">rast</span>(<span class="st">&quot;data/elevation.tif&quot;</span>)</span></code></pre></div>
+</div>
+<div id="distance-calculations" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Distance Calculations<a href="spacial-analysis-week-4.html#distance-calculations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We’re going to start off today with some distance calculations. Using our species occurrence data, say we want to compare each species average distance to the nearest river.</p>
+<p>Throughout today we are going to be mapping our spatial data to quickly inspect it and get a visual of the data’s extent and characteristics, so lets set our <code>tmap</code> mode to interactive.</p>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="spacial-analysis-week-4.html#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tmap_mode</span>(<span class="st">&quot;view&quot;</span>)</span></code></pre></div>
+<p>Quick view of all our points, colored by species:</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="spacial-analysis-week-4.html#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qtm</span>(occ, <span class="at">symbols.col =</span> <span class="st">&quot;Species&quot;</span>)</span></code></pre></div>
+<p>Now, calculating the distance to the nearest river involves point to line distance calculations, which we can perform with the <code>sf</code> package.</p>
+<p>Before performing any spatial operations, remember all of our spatial objects must be in the same CRS.</p>
+<p>Using what you learned in week one, check the CRS of the occurrences and rivers, and perform a spatial transformation if needed (<strong><em>for the sake of this lesson, keep data in NAD83</em></strong>).</p>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="spacial-analysis-week-4.html#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(rivers)</span>
+<span id="cb88-2"><a href="spacial-analysis-week-4.html#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(occ)</span>
+<span id="cb88-3"><a href="spacial-analysis-week-4.html#cb88-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-4"><a href="spacial-analysis-week-4.html#cb88-4" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(rivers) <span class="sc">==</span> <span class="fu">st_crs</span>(occ) <span class="co">#FALSE :(</span></span>
+<span id="cb88-5"><a href="spacial-analysis-week-4.html#cb88-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-6"><a href="spacial-analysis-week-4.html#cb88-6" aria-hidden="true" tabindex="-1"></a><span class="co">#complete this operation</span></span>
+<span id="cb88-7"><a href="spacial-analysis-week-4.html#cb88-7" aria-hidden="true" tabindex="-1"></a>occ <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(occ, <span class="fu">st_crs</span>(rivers))</span></code></pre></div>
+<div id="exercise-1-4" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Exercise #1<a href="spacial-analysis-week-4.html#exercise-1-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Our occurrence data set covers all of Colorado, but rivers are only for Larimer County. So, we have to first filter our points to Larimer County. Explore the use of <code>st_filter()</code> and use it to filter points that are found within the Larimer County polygon (which you can filter/index from your <code>counties</code> object). Call the new object<code>'occ_larimer</code> and include a quick plot of the filtered points.</p>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="spacial-analysis-week-4.html#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create object by filtering out only Larimer County from the &#39;counties&#39; data set</span></span>
+<span id="cb89-2"><a href="spacial-analysis-week-4.html#cb89-2" aria-hidden="true" tabindex="-1"></a>occ_larimer <span class="ot">&lt;-</span> <span class="fu">st_filter</span>(occ, <span class="fu">filter</span>(counties, NAMELSAD <span class="sc">==</span> <span class="st">&quot;Larimer County&quot;</span>), <span class="at">.predicate =</span> st_intersects)</span>
+<span id="cb89-3"><a href="spacial-analysis-week-4.html#cb89-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb89-4"><a href="spacial-analysis-week-4.html#cb89-4" aria-hidden="true" tabindex="-1"></a><span class="fu">qtm</span>(occ_larimer)</span></code></pre></div>
+<p>Great, now we just have species occurrences within Larimer County.</p>
+<p>Now for each point we want to calculate its distance to the nearest river. The most efficient way is to first find the nearest line feature for each point. We can do this with the <code>st_nearest_feature()</code> function.</p>
+<p>This function returns the index values (row number) of the river feature in the <code>rivers</code> spatial data frame that is closest in distance to each point. Here we are saving these index values in a new column of our Larimer occurrences that we will use later to calculate distances.</p>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="spacial-analysis-week-4.html#cb90-1" aria-hidden="true" tabindex="-1"></a>occ_larimer<span class="sc">$</span>nearest_river <span class="ot">&lt;-</span> <span class="fu">st_nearest_feature</span>(occ_larimer, rivers)</span></code></pre></div>
+<p>Now, for each point we can use the <code>st_distance()</code> function to calculate the distance to the nearest river feature, using the index value in our new “nearest_river” column. Adding <code>by_element = TRUE</code> is necessary to tell the function to perform the distance calculations by element (row), which we will fill into a new column “river_dist_m”.</p>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="spacial-analysis-week-4.html#cb91-1" aria-hidden="true" tabindex="-1"></a>occ_larimer<span class="sc">$</span>river_dist_m <span class="ot">&lt;-</span></span>
+<span id="cb91-2"><a href="spacial-analysis-week-4.html#cb91-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_distance</span>(occ_larimer, rivers[occ_larimer<span class="sc">$</span>nearest_river, ], <span class="at">by_element =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<p>Notice that the new column is more than just a numeric class, but a “units” class, specifying that the values are in meters.</p>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="spacial-analysis-week-4.html#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(occ_larimer)</span></code></pre></div>
+</div>
+<div id="exercise-2-4" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> Exercise #2<a href="spacial-analysis-week-4.html#exercise-2-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cool, now you have the distance to the nearest river (in meters) for each individual species occurrence, but you want the average distance for each species. Using what you know of the <code>dplyr</code> functions, calculate the species average distance, then re-create the bar plot below with <code>ggplot2</code> to compare the averages (feel free to add more customization!):</p>
+<p><img src="images/ex2_barplot.png" /></p>
+<p><em>Hint</em>: remember that the new distance column is a ‘units’ data type and may throw an error. You will need to coerce that data type in order to complete the operation.</p>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="spacial-analysis-week-4.html#cb93-1" aria-hidden="true" tabindex="-1"></a>occ_larimer<span class="sc">$</span>river_dist_m <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(occ_larimer<span class="sc">$</span>river_dist_m)</span>
+<span id="cb93-2"><a href="spacial-analysis-week-4.html#cb93-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb93-3"><a href="spacial-analysis-week-4.html#cb93-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(occ_larimer)</span>
+<span id="cb93-4"><a href="spacial-analysis-week-4.html#cb93-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb93-5"><a href="spacial-analysis-week-4.html#cb93-5" aria-hidden="true" tabindex="-1"></a>avg_distance <span class="ot">&lt;-</span> occ_larimer <span class="sc">%&gt;%</span></span>
+<span id="cb93-6"><a href="spacial-analysis-week-4.html#cb93-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Species) <span class="sc">%&gt;%</span></span>
+<span id="cb93-7"><a href="spacial-analysis-week-4.html#cb93-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_dist =</span> <span class="fu">mean</span>(river_dist_m))</span>
+<span id="cb93-8"><a href="spacial-analysis-week-4.html#cb93-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb93-9"><a href="spacial-analysis-week-4.html#cb93-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(avg_distance)</span>
+<span id="cb93-10"><a href="spacial-analysis-week-4.html#cb93-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb93-11"><a href="spacial-analysis-week-4.html#cb93-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(avg_distance) <span class="sc">+</span></span>
+<span id="cb93-12"><a href="spacial-analysis-week-4.html#cb93-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>species, <span class="at">y=</span>avg_dist, <span class="at">fill=</span>Species)) <span class="sc">+</span></span>
+<span id="cb93-13"><a href="spacial-analysis-week-4.html#cb93-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y=</span> <span class="st">&quot;Average Distance (m)&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Species&quot;</span>)</span></code></pre></div>
+</div>
+</div>
+<div id="buffers" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Buffers<a href="spacial-analysis-week-4.html#buffers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Alternatively, say you want to know what percentage of species’ occurrences (points) were found within a specified distance of a river (calculated buffer).</p>
+<p>To do this we could add a buffer around our line features and filter the points that fall within that buffer zone. For this example let’s say we are interested in the 100 m buffer zone around a river. However, if you try this you’ll notice this operation takes quite a while.</p>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="spacial-analysis-week-4.html#cb94-1" aria-hidden="true" tabindex="-1"></a>river_buffer <span class="ot">&lt;-</span> <span class="fu">st_buffer</span>(rivers, <span class="at">dist =</span> <span class="dv">100</span>)</span></code></pre></div>
+<p>Instead, a more efficient way would be to make a 100 m buffer around each point, and see how many of those buffers intersect with a river.</p>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="spacial-analysis-week-4.html#cb95-1" aria-hidden="true" tabindex="-1"></a>occ_buffer <span class="ot">&lt;-</span> <span class="fu">st_buffer</span>(occ_larimer, <span class="at">dist =</span> <span class="dv">100</span>)</span></code></pre></div>
+<p>Still takes a little bit of run time, but much faster than buffering each line feature. Our <code>occ_buffer</code> object is now a spatial polygon data frame, where each feature is an occurrence buffer with 100 m radius.</p>
+</div>
+<div id="spatial-intersect" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Spatial Intersect<a href="spacial-analysis-week-4.html#spatial-intersect" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We can conduct spatial intersect operations using the function <code>st_intersects()</code>. This function checks if each individual buffer intersects with a river, and if so it returns an index value (row number) for each river feature it intersects. This function returns a list object for each buffer polygon, that will be empty if there are no intersections. We will add this as a column to our buffer data set, and then create a binary yes/no river intersection column based on those results (is the list empty or not?).</p>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="spacial-analysis-week-4.html#cb96-1" aria-hidden="true" tabindex="-1"></a>river_intersections <span class="ot">&lt;-</span> <span class="fu">st_intersects</span>(occ_buffer, rivers)</span></code></pre></div>
+<p>If we inspect this object, we see it is a list of the same length as our <code>occ_buffer</code> object, where each list element is either empty (no intersections) or a list of index numbers for the river features that do intersect that buffer.</p>
+<div id="exercise-3-4" class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> Exercise #3<a href="spacial-analysis-week-4.html#exercise-3-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Create a new column in <code>occ_buff</code> that returns TRUE/FALSE if the buffer intersects with a river.</p>
+<p><em>Hint</em>: make use of the <code>length()</code> function..we aren’t interested at this point in how many river features are within 100m of a species occurrence, just whether or not there was a river within the buffer or not.</p>
+<p>Second, calculate what percentage of occurrences are within 100 m of a river for each species using <code>dplyr</code> operations. The below code will get you started, however it doesn’t quite work. Why not? There is one line of code you need to add to the pipe operations for this to work, what is it?</p>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="spacial-analysis-week-4.html#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="co">#LIVE CODING IN CLASS</span></span>
+<span id="cb97-2"><a href="spacial-analysis-week-4.html#cb97-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-3"><a href="spacial-analysis-week-4.html#cb97-3" aria-hidden="true" tabindex="-1"></a><span class="co"># what is the length of the first interger of river_intersections</span></span>
+<span id="cb97-4"><a href="spacial-analysis-week-4.html#cb97-4" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(river_intersections[[<span class="dv">1</span>]])</span>
+<span id="cb97-5"><a href="spacial-analysis-week-4.html#cb97-5" aria-hidden="true" tabindex="-1"></a><span class="co"># lengths() will treat river-intersections one element at a time, whereas lenth() is just the length of the list</span></span>
+<span id="cb97-6"><a href="spacial-analysis-week-4.html#cb97-6" aria-hidden="true" tabindex="-1"></a><span class="co"># CREATE NEW COLUMN THAT RETURNS &#39;TRUE&#39; or &#39;FALSE&#39;</span></span>
+<span id="cb97-7"><a href="spacial-analysis-week-4.html#cb97-7" aria-hidden="true" tabindex="-1"></a>occ_buffer<span class="sc">$</span>buffer_intersect <span class="ot">&lt;-</span> <span class="fu">lengths</span>(river_intersections) <span class="sc">&gt;</span> <span class="dv">0</span></span>
+<span id="cb97-8"><a href="spacial-analysis-week-4.html#cb97-8" aria-hidden="true" tabindex="-1"></a><span class="co"># PERCENTAGES; group by species, create new column for n(), new column &#39;percent river&#39; with calculation of percent, then st_drop_geometry to removed the geometry points from the dataset</span></span>
+<span id="cb97-9"><a href="spacial-analysis-week-4.html#cb97-9" aria-hidden="true" tabindex="-1"></a>occ_buffer <span class="sc">%&gt;%</span></span>
+<span id="cb97-10"><a href="spacial-analysis-week-4.html#cb97-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Species) <span class="sc">%&gt;%</span></span>
+<span id="cb97-11"><a href="spacial-analysis-week-4.html#cb97-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_occ =</span> <span class="fu">n</span>(), <span class="at">percent_river =</span> <span class="fu">sum</span>((buffer_intersect <span class="sc">==</span> <span class="cn">TRUE</span>)<span class="sc">/</span>total_occ)<span class="sc">*</span><span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb97-12"><a href="spacial-analysis-week-4.html#cb97-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>()</span>
+<span id="cb97-13"><a href="spacial-analysis-week-4.html#cb97-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-14"><a href="spacial-analysis-week-4.html#cb97-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-15"><a href="spacial-analysis-week-4.html#cb97-15" aria-hidden="true" tabindex="-1"></a><span class="co">#ANOTHER WAY TO DO IT WITH A for loop</span></span>
+<span id="cb97-16"><a href="spacial-analysis-week-4.html#cb97-16" aria-hidden="true" tabindex="-1"></a>occ_buffer <span class="ot">&lt;-</span> <span class="fu">mutate</span>(occ_buffer, <span class="at">occ_buff =</span> <span class="dv">0</span>)</span>
+<span id="cb97-17"><a href="spacial-analysis-week-4.html#cb97-17" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(river_intersections)) { </span>
+<span id="cb97-18"><a href="spacial-analysis-week-4.html#cb97-18" aria-hidden="true" tabindex="-1"></a>  occ_buffer<span class="sc">$</span>occ_buff[i] <span class="ot">&lt;-</span> <span class="fu">if_else</span>(<span class="fu">length</span>(river_intersections[[i]])<span class="sc">&gt;</span><span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb97-19"><a href="spacial-analysis-week-4.html#cb97-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb97-20"><a href="spacial-analysis-week-4.html#cb97-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-21"><a href="spacial-analysis-week-4.html#cb97-21" aria-hidden="true" tabindex="-1"></a>occ_buffer <span class="sc">%&gt;%</span> </span>
+<span id="cb97-22"><a href="spacial-analysis-week-4.html#cb97-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Species) <span class="sc">%&gt;%</span> </span>
+<span id="cb97-23"><a href="spacial-analysis-week-4.html#cb97-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percent_river =</span> (<span class="fu">sum</span>(occ_buff <span class="sc">==</span> <span class="dv">1</span>)<span class="sc">/</span>occ_buff)<span class="sc">*</span><span class="dv">100</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb97-24"><a href="spacial-analysis-week-4.html#cb97-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_occ =</span> <span class="fu">n</span>())</span></code></pre></div>
+<div id="reflection" class="section level4 hasAnchor" number="5.4.1.1">
+<h4><span class="header-section-number">5.4.1.1</span> Reflection<a href="spacial-analysis-week-4.html#reflection" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>This analysis is just for teaching purposes, why would you be cautious about these results for answering real research questions? Think about how we filtered everything to a political boundary, what’s wrong with this method?</p>
+<p>This was not the best way to do this as the spacial boundaries do not necessarily align with the given species preferred habitat, potentially swaying the data one way or another if this political boundary happens to cover one species’ habitat and not the others. Additionally, creating such large averages over time and geographic location might create inaccurate representations of the data.</p>
+</div>
+</div>
+</div>
+<div id="raster-reclassification" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Raster Reclassification<a href="spacial-analysis-week-4.html#raster-reclassification" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>So far we’ve dealt with a bunch of vector data and associated analyses with the <code>sf</code> package. Now lets work through some raster data analysis using the <code>terra</code> package.</p>
+<p>First, lets explore the landcover raster by making a quick plot.</p>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="spacial-analysis-week-4.html#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qtm</span>(landcover)</span></code></pre></div>
+<p>This land cover data set includes attributes (land cover classes) associated with raster values. We can quickly view the frequency of each land cover type with the <code>freq()</code> function.</p>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="spacial-analysis-week-4.html#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="fu">freq</span>(landcover)</span></code></pre></div>
+<p>Use <code>ggplot2</code> to turn this into a bar chart</p>
+<details>
+<summary>
+Show Answer
+</summary>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="spacial-analysis-week-4.html#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="fu">freq</span>(landcover) <span class="sc">%&gt;%</span> </span>
+<span id="cb100-2"><a href="spacial-analysis-week-4.html#cb100-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="fu">reorder</span>(value, count), count)) <span class="sc">+</span></span>
+<span id="cb100-3"><a href="spacial-analysis-week-4.html#cb100-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;&quot;</span>) <span class="sc">+</span></span>
+<span id="cb100-4"><a href="spacial-analysis-week-4.html#cb100-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb100-5"><a href="spacial-analysis-week-4.html#cb100-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="co"># switch the axes to better view land cover class names</span></span></code></pre></div>
+</details>
+<p><br></p>
+<p>Say we want to explore some habitat characteristics of our species of interest, and we are specifically interested in forest cover. Our first step is to create a new raster layer from our land cover layer representing percent forest cover. This will involve multiple operations, including raster reclassification and focal statistics. Specifically, say we want to calculate the average percentage of forest cover and urbanization within a 9x9 pixel moving window (remember since rasters are made up of pixels, the distances we use are dependent on the resolution of the raster).</p>
+<p>First , reclassify the land cover raster creating a new raster representing just forest/non-forest pixels.</p>
+<p>Since rasters are technically matrices, we can index and change values using matrix operations. Given this particular raster uses character names associated with values (thanks to the .aux file!), we can index by those names.</p>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="spacial-analysis-week-4.html#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="co">#first assign landcover to a new object name so we can manipulate it while keeping the origian</span></span>
+<span id="cb101-2"><a href="spacial-analysis-week-4.html#cb101-2" aria-hidden="true" tabindex="-1"></a>forest <span class="ot">&lt;-</span> landcover</span>
+<span id="cb101-3"><a href="spacial-analysis-week-4.html#cb101-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb101-4"><a href="spacial-analysis-week-4.html#cb101-4" aria-hidden="true" tabindex="-1"></a><span class="co">#where the raster equals any of the forest categories, set that value to 1</span></span>
+<span id="cb101-5"><a href="spacial-analysis-week-4.html#cb101-5" aria-hidden="true" tabindex="-1"></a>forest[forest <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Deciduous Forest&quot;</span>, <span class="st">&quot;Evergreen Forest&quot;</span>, <span class="st">&quot;Mixed Forest&quot;</span>)] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb101-6"><a href="spacial-analysis-week-4.html#cb101-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb101-7"><a href="spacial-analysis-week-4.html#cb101-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SPELLING IS IMPORTANT</span></span>
+<span id="cb101-8"><a href="spacial-analysis-week-4.html#cb101-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb101-9"><a href="spacial-analysis-week-4.html#cb101-9" aria-hidden="true" tabindex="-1"></a><span class="co">#now set all non forest pixels to NA</span></span>
+<span id="cb101-10"><a href="spacial-analysis-week-4.html#cb101-10" aria-hidden="true" tabindex="-1"></a>forest[forest <span class="sc">!=</span> <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span></code></pre></div>
+<p>Now plot the new forest layer to get a quick sense if it looks accurate or not.</p>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="spacial-analysis-week-4.html#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(forest)</span></code></pre></div>
+</div>
+<div id="focal-statistics" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Focal Statistics<a href="spacial-analysis-week-4.html#focal-statistics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now we are going to perform focal statistics with the <code>focal()</code> function, which is a spatial operation that calculates new values for each cell based on a specified moving window. For this example we are going to calculate within a 9x9km moving window (since our pixel resolution is 1km). We supply this to the <code>w =</code> argument as a matrix, where the first value is the weight of each pixel, and the second two are the number of rows and columns. Second we use the “sum” function, since each forest pixel has a value of 1 we will get the total number of forest pixels within the moving window, and then later divide the values by the total number of pixels in the window (81) to get the percentage. The final raster values will represent for each pixel the surrounding forest percentage (within ~4.5 km radius).</p>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="spacial-analysis-week-4.html#cb103-1" aria-hidden="true" tabindex="-1"></a>forest_pct <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">focal</span>(forest, <span class="at">w=</span><span class="fu">matrix</span>(<span class="dv">1</span>,<span class="dv">9</span>,<span class="dv">9</span>), <span class="at">fun =</span> <span class="st">&quot;sum&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb103-2"><a href="spacial-analysis-week-4.html#cb103-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-3"><a href="spacial-analysis-week-4.html#cb103-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-4"><a href="spacial-analysis-week-4.html#cb103-4" aria-hidden="true" tabindex="-1"></a>forest_pct <span class="ot">&lt;-</span> forest_pct<span class="sc">/</span><span class="dv">81</span></span>
+<span id="cb103-5"><a href="spacial-analysis-week-4.html#cb103-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-6"><a href="spacial-analysis-week-4.html#cb103-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-7"><a href="spacial-analysis-week-4.html#cb103-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(forest_pct)</span></code></pre></div>
+<p>Next, we wanted to know the percent forest cover associated with each species occurrence. Since we are now working with multiple spatial objects, we have to first check they are all in the same CRS and if not transform the data before any spatial operations.</p>
+<div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="spacial-analysis-week-4.html#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="fu">crs</span>(forest_pct)</span>
+<span id="cb104-2"><a href="spacial-analysis-week-4.html#cb104-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb104-3"><a href="spacial-analysis-week-4.html#cb104-3" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(occ)</span></code></pre></div>
+<div id="exercise-4-4" class="section level3 hasAnchor" number="5.6.1">
+<h3><span class="header-section-number">5.6.1</span> Exercise #4<a href="spacial-analysis-week-4.html#exercise-4-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Looks like the raster layer is in a different CRS. Reproject this so we can use it with our vector data (which are all in NAD83) using the <code>project()</code> function from <code>terra</code>, and write a line of code that checks whether or not the new object and the <code>occ</code> object have the same CRS</p>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="spacial-analysis-week-4.html#cb105-1" aria-hidden="true" tabindex="-1"></a>forest_pct <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">project</span>(forest_pct, <span class="fu">crs</span>(occ))</span>
+<span id="cb105-2"><a href="spacial-analysis-week-4.html#cb105-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb105-3"><a href="spacial-analysis-week-4.html#cb105-3" aria-hidden="true" tabindex="-1"></a><span class="fu">crs</span>(forest_pct) <span class="sc">==</span> <span class="fu">crs</span>(occ)</span></code></pre></div>
+</div>
+</div>
+<div id="raster-extract" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Raster Extract<a href="spacial-analysis-week-4.html#raster-extract" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now we can use the <code>extract()</code> function to extract the raster pixel value at each occurrence.</p>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="spacial-analysis-week-4.html#cb106-1" aria-hidden="true" tabindex="-1"></a>terra<span class="sc">::</span><span class="fu">extract</span>(forest_pct, occ)</span></code></pre></div>
+<div id="exercise-5-4" class="section level3 hasAnchor" number="5.7.1">
+<h3><span class="header-section-number">5.7.1</span> Exercise #5<a href="spacial-analysis-week-4.html#exercise-5-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Notice that this returns a 2 column data frame, with an ID for each feature (occurrence) and the extracted raster value in the second column. How would you write this line of <code>extract()</code> code to add a single column to the occurrence data set of just the forest percentage value?</p>
+<p><em>Hint:</em> Use your knowledge of indexing!</p>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="spacial-analysis-week-4.html#cb107-1" aria-hidden="true" tabindex="-1"></a>occ <span class="ot">&lt;-</span> <span class="fu">mutate</span>(occ, terra<span class="sc">::</span><span class="fu">extract</span>(forest_pct, occ))</span></code></pre></div>
+<p>Then calculate the average forest cover for each species. On average, which species is associated with the highest percentage of forest cover?</p>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="spacial-analysis-week-4.html#cb108-1" aria-hidden="true" tabindex="-1"></a>occ<span class="sc">$</span>forest_percent <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">extract</span>(forest_pct, occ)[,<span class="dv">2</span>]</span>
+<span id="cb108-2"><a href="spacial-analysis-week-4.html#cb108-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb108-3"><a href="spacial-analysis-week-4.html#cb108-3" aria-hidden="true" tabindex="-1"></a>occ_forest_cover <span class="ot">&lt;-</span> occ <span class="sc">%&gt;%</span>   </span>
+<span id="cb108-4"><a href="spacial-analysis-week-4.html#cb108-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Species) <span class="sc">%&gt;%</span>  </span>
+<span id="cb108-5"><a href="spacial-analysis-week-4.html#cb108-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>() <span class="sc">%&gt;%</span>   </span>
+<span id="cb108-6"><a href="spacial-analysis-week-4.html#cb108-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean=</span> <span class="fu">mean</span>(forest_percent))</span></code></pre></div>
+<p>On average, Elk are associated with the highest percent forest cover.</p>
+<p>Create a boxplot to compare the spread of values across species.</p>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="spacial-analysis-week-4.html#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(occ_forest_cover) <span class="sc">+</span></span>
+<span id="cb109-2"><a href="spacial-analysis-week-4.html#cb109-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>Species, <span class="at">y=</span>mean, <span class="at">fill=</span>Species)) <span class="sc">+</span></span>
+<span id="cb109-3"><a href="spacial-analysis-week-4.html#cb109-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y=</span> <span class="st">&quot;Average % Forest Cover (m)&quot;</span>, <span class="at">x =</span> <span class="st">&quot;Species&quot;</span>)</span></code></pre></div>
+<p>That’s one way to use the <code>extract()</code> function. We can also extract raster values within polygons, and supply a function to summarize those raster values.</p>
+</div>
+<div id="exercise-6-1" class="section level3 hasAnchor" number="5.7.2">
+<h3><span class="header-section-number">5.7.2</span> Exercise #6<a href="spacial-analysis-week-4.html#exercise-6-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Calculate the most common landcover type in each Colorado county, working through the following steps <strong>filling in the necessary code</strong>:</p>
+<p>Project the landcover raster to the CRS of the counties shapefile</p>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="spacial-analysis-week-4.html#cb110-1" aria-hidden="true" tabindex="-1"></a>landcover_prj <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">project</span>(landcover, <span class="fu">crs</span>(counties))</span></code></pre></div>
+<p>Add a new column to <code>counties</code> that is the most common land cover type, using the function <code>modal</code> within <code>extract()</code>.</p>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="spacial-analysis-week-4.html#cb111-1" aria-hidden="true" tabindex="-1"></a>counties<span class="sc">$</span>common_landcover <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">extract</span>(landcover_prj, counties, <span class="at">fun =</span> modal)</span>
+<span id="cb111-2"><a href="spacial-analysis-week-4.html#cb111-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb111-3"><a href="spacial-analysis-week-4.html#cb111-3" aria-hidden="true" tabindex="-1"></a>?terra<span class="sc">::</span><span class="fu">extract</span>()</span></code></pre></div>
+<p>Notice however that this returns the raw raster values, which are not informative to us without knowing the associated landcover classes.</p>
+<p>Since we have the associated auxillary file with this raster, we can extract metadata to get the value/class pairs with the <code>cats()</code> function.</p>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="spacial-analysis-week-4.html#cb112-1" aria-hidden="true" tabindex="-1"></a> cats_landcover <span class="ot">&lt;-</span> <span class="fu">cats</span>(landcover)</span></code></pre></div>
+<p>Look at what class this function returns though. Coerce this into a data frame (there are multiple ways you could do this). Once you have have it as a data frame, use some <code>dplyr</code> operations to select just the value and land cover class columns, and remove all the empty rows (i.e., those without a landcover class). This should return a data frame of 17 rows. Call it <code>nlcd_classes</code>.</p>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="spacial-analysis-week-4.html#cb113-1" aria-hidden="true" tabindex="-1"></a><span class="co">#occ_buffer$buffer_intersect &lt;- lengths(river_intersections) &gt; 0</span></span>
+<span id="cb113-2"><a href="spacial-analysis-week-4.html#cb113-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-3"><a href="spacial-analysis-week-4.html#cb113-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-4"><a href="spacial-analysis-week-4.html#cb113-4" aria-hidden="true" tabindex="-1"></a>things <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(cats_landcover) <span class="sc">%&gt;%</span></span>
+<span id="cb113-5"><a href="spacial-analysis-week-4.html#cb113-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(NLCD.Land.Cover.Class) <span class="sc">%&gt;%</span></span>
+<span id="cb113-6"><a href="spacial-analysis-week-4.html#cb113-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>(NLCD.Land.Cover.Class)</span>
+<span id="cb113-7"><a href="spacial-analysis-week-4.html#cb113-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-8"><a href="spacial-analysis-week-4.html#cb113-8" aria-hidden="true" tabindex="-1"></a><span class="co"># zeros &lt;- rowSums(things == 0) == ncol(things)</span></span>
+<span id="cb113-9"><a href="spacial-analysis-week-4.html#cb113-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-10"><a href="spacial-analysis-week-4.html#cb113-10" aria-hidden="true" tabindex="-1"></a>nlcd_classes <span class="ot">&lt;-</span> things <span class="sc">%&gt;%</span></span>
+<span id="cb113-11"><a href="spacial-analysis-week-4.html#cb113-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">rowSums</span>(<span class="fu">across</span>(<span class="fu">everything</span>(), <span class="sc">~</span> . <span class="sc">==</span> <span class="dv">0</span>)) <span class="sc">!=</span><span class="fu">ncol</span>(things))</span>
+<span id="cb113-12"><a href="spacial-analysis-week-4.html#cb113-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb113-13"><a href="spacial-analysis-week-4.html#cb113-13" aria-hidden="true" tabindex="-1"></a><span class="co">#nlcd_classes &lt;- raster::as.data.frame(cats_landcover, xy = TRUE, na.rm = FALSE) %&gt;%</span></span>
+<span id="cb113-14"><a href="spacial-analysis-week-4.html#cb113-14" aria-hidden="true" tabindex="-1"></a><span class="co">#  na.omit() %&gt;%</span></span>
+<span id="cb113-15"><a href="spacial-analysis-week-4.html#cb113-15" aria-hidden="true" tabindex="-1"></a><span class="co">#  select(value, NLCD.Land.Cover.Class)</span></span></code></pre></div>
+<p>Then tie <code>nlcd_classes</code> to the <code>counties</code> data frame with <code>left_join()</code>, which will join two data frames by a common variable. In this case, your common variable is the raw raster value. Look at the documentation for <code>left_join()</code> and how you use the <code>by =</code> argument to complete this step.</p>
+<p>Finally, create a map of Colorado counties that is colored by the most common landcover type (using the class, not the raw value) in each county. The map can be interactive or static, but must include a legend.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="get-spacial-week-4.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
